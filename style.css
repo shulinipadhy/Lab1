@@ -6,3 +6,13 @@ h1 {
 .main {
     text-align: center;
 }
+
+div {
+    background-color: lightblue;
+}
+
+.signature {
+    text-align: right;
+    color: darkblue;
+    font-style: italic;
+}
