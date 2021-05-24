@@ -2,32 +2,47 @@
 
 <html>
 <head>
-<title>Cupcake Questionnaire</title>
-<h1> Order Cupcake! </h1>
+	<link rel = "stylesheet" href = "style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 </head>
 	<body>
 
+	<title>Cupcake Questionnaire</title>
+
+	<div class = "main"> 
+
+	<h1> Order a Cupcake! </h1>
+
 	<h3>Check out this link for the Cupckae Lounge in Byward!</h3>
 	<a href = "https://thecupcakelounge.com/"> The Cupcake Lounge [Official Website]</a><br>
-		<br>
+	<br>
+	
+	<img src="cupcake.jpg" alt="https://thecupcakelounge.com/" width="600" height="450">
+
 		
 		<form action = "index.php" name = "My Form" method = "POST">
+		
+		<br>
 		Please enter your full name: <br>
 		First name: <input type = "text" name = "firstname"> <br>
+		<br>
 		Last name: <input type = "text" name = "lastname"> <br>
 		<br>
-
+		<br>
 		What kind of cupcake would you like?: <br>
 		<input type = "radio" name = "type" value = "eggless"> Eggless <br>
 		<input type = "radio" name = "type" value = "regular"> Regular <br>
 		<br>
 
 		Choose your topping(s): <br>
+		<div class = "check_box">
 		<input type = "checkbox" name = "Chocolate chips" value = "Chocolate chips"> Chocolate chips <br>
 		<input type = "checkbox" name = "Sprinkles" value = "Sprinkles"> Sprinkles <br>
 		<input type = "checkbox" name = "Powdered sugar" value = "Powdered sugar"> Powdered sugar <br>
 		<br>
-		
+		</div>
+
 		What would you like the base of the cupcake to be? <br>
 		<select name = "favourite">
 			<option value = "Chocolate" selected = "selected"> Chocolate </option>
@@ -40,8 +55,12 @@
 		Special comments for your order: <br>
 			<textarea rows = "5" cols = "30" /> </textarea>
 	</form>
-	
-		<button>Submit!</button>
-</body>
+	<br>
+	<button type="button" class="btn btn-outline-success">Success</button>
+	<br>
+	<br>
 
+</div>
+
+</body>
 </html>
