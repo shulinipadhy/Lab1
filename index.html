@@ -24,18 +24,19 @@
 		<form action = "index.php" name = "My Form" method = "POST">
 		
 		<br>
-		Please enter your full name: <br>
-		First name: <input type = "text" name = "firstname"> <br>
+		<p> <b>Please enter your full name: </b> </p>
+
+		<label> First name: </label> <input type = "text" name = "firstname"> <br>
 		<br>
-		Last name: <input type = "text" name = "lastname"> <br>
+		<label>Last name: </label> <input type = "text" name = "lastname"> <br>
 		<br>
-		<br>
-		What kind of cupcake would you like?: <br>
+	
+		<p> <b>What kind of cupcake would you like? </b></p>
 		<input type = "radio" name = "type" value = "eggless"> Eggless <br>
 		<input type = "radio" name = "type" value = "regular"> Regular <br>
 		<br>
 
-		Choose your topping(s): <br>
+		<p> <b> Choose your topping(s): </b> </p>
 		<div class = "check_box">
 		<input type = "checkbox" name = "Chocolate chips" value = "Chocolate chips"> Chocolate chips <br>
 		<input type = "checkbox" name = "Sprinkles" value = "Sprinkles"> Sprinkles <br>
@@ -43,7 +44,7 @@
 		<br>
 		</div>
 
-		What would you like the base of the cupcake to be? <br>
+		<p><b>What would you like the base of the cupcake to be?</b> </p>
 		<select name = "favourite">
 			<option value = "Chocolate" selected = "selected"> Chocolate </option>
 			<option value = "Vanilla"> Vanilla </option>
@@ -52,13 +53,15 @@
 			<option value = "Strawberry"> Strawberry </option></select><br>
 			<br>
 
-		Special comments for your order: <br>
+		<p><b>Special comments for your order:</b> </p>
 			<textarea rows = "5" cols = "30" /> </textarea>
 	</form>
 	<br>
-	<button type="button" class="btn btn-outline-success">Submit Form!</button>
+	<button type="button" class="btn btn-warning">Submit Form!</button>
 	<br>
 	<br>
+
+	<p class = "signature"> ~Created by Shulini Padhy~</p>
 
 </div>
 
