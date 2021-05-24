@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cupcake Questionnaire</title>
+<h1> Order a Cupcake! </h1>
+</head>
+	<body>
+
+	<h3>Check out this link for the Cupckae Lounge in Byward!</h3>
+	<a href = "https://thecupcakelounge.com/"> The Cupcake Lounge [Official Website]</a><br>
+		<br>
+		
+		<form action = "index.php" name = "My Form" method = "POST">
+		Please enter your full name: <br>
+		First name: <input type = "text" name = "firstname"> <br>
+		Last name: <input type = "text" name = "lastname"> <br>
+		<br>
+
+		What kind of cupcake would you like?: <br>
+		<input type = "radio" name = "type" value = "eggless"> Eggless <br>
+		<input type = "radio" name = "type" value = "regular"> Regular <br>
+		<br>
+
+		Choose your topping(s): <br>
+		<input type = "checkbox" name = "Chocolate chips" value = "Chocolate chips"> Chocolate chips <br>
+		<input type = "checkbox" name = "Sprinkles" value = "Sprinkles"> Sprinkles <br>
+		<input type = "checkbox" name = "Powdered sugar" value = "Powdered sugar"> Powdered sugar <br>
+		<br>
+		
+		What would you like the base of the cupcake to be? <br>
+		<select name = "favourite">
+			<option value = "Chocolate" selected = "selected"> Chocolate </option>
+			<option value = "Vanilla"> Vanilla </option>
+			<option value = "Lemon"> Lemon </option>
+			<option value = "Cookie Dough"> Cookie Dough </option>
+			<option value = "Strawberry"> Strawberry </option></select><br>
+			<br>
+
+		Special comments for your order: <br>
+			<textarea rows = "5" cols = "30" /> </textarea>
+	</form>
+		<button>Submit!</button>
+</body>
+</html>
