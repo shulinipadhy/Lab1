@@ -4,21 +4,84 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Broccoli - $1.99",
 		vegetarian: true,
 		glutenFree: true,
+        lactoseFree: true,
+        nutFree: true,
+        organic: false,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "Bread - $2.35",
 		vegetarian: true,
 		glutenFree: false,
+        lactoseFree: true,
+        nutFree: true,
+        organic: false,
 		price: 2.35
 	},
-	{
-		name: "salmon",
+    {
+		name: "Organic Bagel - $2.75",
 		vegetarian: false,
 		glutenFree: true,
+        lactoseFree: true,
+        nutFree: true,
+        organic: true,
+		price: 2.75
+	},
+    {
+		name: "Organic Plums - $2.99",
+		vegetarian: false,
+		glutenFree: true,
+        lactoseFree: true,
+        nutFree: true,
+        organic: true,
+		price: 2.99
+	},
+    {
+		name: "Almond Granola - $3.97",
+		vegetarian: true,
+		glutenFree: true,
+        lactoseFree: true,
+        nutFree: false,
+        organic: true,
+		price: 3.97
+	},
+    {
+		name: "Maple Cookies - $4.45",
+		vegetarian: true,
+		glutenFree: false,
+        lactoseFree: false,
+        nutFree: true,
+        organic: false,
+		price: 4.45
+	},
+	{
+		name: "Organic Yogurt - $5.99",
+		vegetarian: true,
+		glutenFree: true,
+        lactoseFree: true,
+        nutFree: true,
+        organic: true,
+		price: 5.99
+	},
+    {
+		name: "Yogurt - $7.99",
+		vegetarian: true,
+		glutenFree: true,
+        lactoseFree: false,
+        nutFree: true,
+        organic: false,
+		price: 7.99
+	},
+    {
+		name: "Salmon - $10.00",
+		vegetarian: false,
+		glutenFree: true,
+        lactoseFree: true,
+        nutFree: true,
+        organic: false,
 		price: 10.00
 	}
 ];
@@ -35,6 +98,15 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+        else if ((restriction == "LactoseFree") && (prods[i].lactoseFree == true)){
+			product_names.push(prods[i].name);
+		}
+        else if ((restriction == "NutFree") && (prods[i].nutFree == true)){
+			product_names.push(prods[i].name);
+		}
+        else if ((restriction == "Organic") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
