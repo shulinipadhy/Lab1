@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+    <title>Online Grocery Center</title>
+
+	<div class = "main"> 
+
+	<h1> Online Grocery Center </h1>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -17,12 +24,16 @@
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <p>Tell us a bit about yourself!</p>
+  <label for = "restrictions">Please select your dietary restrictions:</label>
+   <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+
 	<option value=""></option>
 	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
+    <option value="GlutenFree">Gluten Free</option>
+    <option value="LactoseFree">Lactose Free</option>
+    <option value="NutFree">Nut Free</option>
+    <option value="Organic">Organic Only</option>
     <option value="None">None</option>
 	</select>
 </div>
@@ -31,7 +42,9 @@
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
+     <br>
 	 <div id="displayProduct"></div>
+        <br>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
 	</button>
@@ -45,6 +58,8 @@
 
 <script src="groceries.js"></script>
 <script src="main.js"></script>
+
+<p class = "signature"> ~ Created by Shulini Padhy ~</p>
 
 </body>
 </html>
