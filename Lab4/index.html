@@ -1,0 +1,297 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
+    <title> Sunshine Vet Clinic </title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="vet_logo.jpg" width="130" height="130"> Welcome to Sunshine Vet Clinic! ©</h1> 
+        <h3 style ="font-size: 20px;">We are located at 941 Forest Water Road, Ottawa, ON K4L 4R1 </h3>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> About us</h1>
+        <p class="p-4 my-3" style="font-size: 25px"><strong>Thank you for visiting our website! We are Sunshine Vet Clinic, a small clinic located in Barrhaven, Ottawa.</strong></p>
+        <p style="font-size: 20px; padding-left: 1.5rem">At Sunshine Vet Clinic, we have a very passionate staff. All of our services are handled with care and are administered by a team of experienced veterinarians who love what they do. Please contact us (information at the bottom of the page) if you would like to reach out to us, or book an appointment!</p>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Our Services</h2></th>
+               <!--<th scope="col"><h2>Services</h2></th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vaccines</td>
+                <td>Surgeries</td>
+            </tr>
+            <tr>
+                <td>Dentistry</td>
+                <td>Annual physical exams</td>
+            </tr>
+            <tr>
+                <td>Flea control and deworming</td>
+                <td>Dietary and nutritional counselling</td>
+            </tr>
+        </tbody>
+    </table>
+      <!--<h1>Here is an alert!</h1> -->
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+     <!--<p>This indicated something important in the page</p>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div> 
+
+    <h1>Button States</h1> -->
+    <!--
+    Buttons can be used for submitting forms, triggering events among many other things.
+    https://getbootstrap.com/docs/5.0/components/buttons/
+    -->
+
+    <button type="button" class="btn btn-warning">Primary Button</button>
+    <button type="button" class="btn btn-warning active">Active Button</button>
+    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
+
+    <h1>Modal Example</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    In the body we can add various components. In this example some radio buttons
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    
+    <h1>Meet Our Experts</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="vet1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong>Suzie Mclane, Veterinarian</strong></p>
+                <p>Dr. Mclane received her medicine degree at University of Toronto and has been assisting our clinic since 2015.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="vet2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong>Aaron King, Registered Veterinary Technician</strong></p>
+                <p>Dr. King received his honours from the Veterinary Assistant Program in 2006 and has been assisting our clinic since 2015.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="vet3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong>Jeffery Hopkins, Veterinarian</strong></p>
+                <p>Dr. Hopkins received his medicine degree from Ontario Veterinary College and has been assisting our clinic since 2017.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    <h1>More Information</h1>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        What's This?
+    </button>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            You can click on the panels below to contact us!
+        </div>
+    </div>
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Address
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">941 Forest Water Road, Ottawa, ON K4L 4R1</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Telephone and Email Address
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>E: info@sunshinevetclinic.ca</p>
+                    <p>T: 613-987-654</p>
+                    <p>F: 613-123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Hours of Operation
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>_______________________________________</p>
+                    <p>Monday:        8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Tuesday:       8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Wednesday:     8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Thursday:      8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Friday:        8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Saturday:      8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                    <p>Sunday:        8 AM -   6 PM </p>
+                    <p>_______________________________________</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Contact Us</h1>
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+    <div class="container">
+        <h2>More information</h2>
+        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
+        <div id="mechanics" class="collapse">
+            <div class="card bg-warning" style="width:200px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Erwind</h4>
+                    <p class="card-text">Erwind knows all about bikes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <p>Form to enter name, email, phone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
