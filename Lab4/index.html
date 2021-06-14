@@ -266,7 +266,25 @@ Many websites will use what is called CSS grid layouts, where you will have a he
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Enter your information below, so we can contact you</p>
+                        <p>Enter your information below, so we can contact you.</p>
+
+                        <div class="container">
+                            <form action="action_page.php">
+                          
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                          
+                              <label for="subject">Subject</label>
+                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                          
+                              <button type="submit" disabled>Submit</button>
+                          
+                            </form>
+                          </div>
+
                     </div>
                 </div>
             </div>
